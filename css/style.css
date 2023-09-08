@@ -8,12 +8,26 @@
     src: url(../fonts/CaviarDreams.ttf);
 }
 
+@font-face {
+    font-family: "CaviarBold";
+    src: url(../fonts/CaviarDreams_Bold.ttf);
+}
+
 body {
     background-color: #EAEAEA;
 }
 
+.saludo {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 30px;
+    font-family: "Caviar Dreams";
+
+}
+
 #buscador {
     margin: auto 25%;
+    display: none;
 }
 
 #nombrePokemon {
@@ -29,8 +43,8 @@ body {
 }
 
 #buscar {
-    margin: 100px;
-    height: 190px;
+    margin: 70px 120px;
+    height: 180px;
     width: 550px;
     font-size: 65px;
     font-family: "Caviar Dreams";
@@ -41,10 +55,82 @@ body {
     transition: .5s;
     background-color: #FF2E63;
     color: #fff;
-    box-shadow: 0 7px 0 #08D9D6;
+    box-shadow: 0 6px 0 #08D9D6;
 }
 
 #buscar:active {
     box-shadow: none;
     transform: translateY(6px);
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    margin-left: 380px;
+    font-family: "Caviar Dreams";
+    font-size: 30px;
+}
+
+#login {
+    margin: 50px 175px;
+    width: 800px;
+    height: 100px;
+    text-align: center;
+}
+
+.cerrar {
+    font-size: 20px;
+    border: 3px solid #FF2E63;
+    outline: none;
+    border-radius: 20px;
+    padding: 8px;
+    box-shadow: 0 6px 0 #252A34;
+    background-color: #FF2E63;
+    color: #fff;
+    font-family: "CaviarBold";
+}
+
+.logout {
+    outline: none;
+    font-size: large;
+    font-family: "CaviarBold";
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: #EAEAEA;
+    color: #252A34;
+}
+
+label {
+    font-family: "Caviar Dreams";
+    font-size: 30px;
+}
+
+input {
+    margin: 15px;
+    height: 80px;
+    width: 800px;
+    font-size: 45px;
+    font-family: "Caviar Dreams";
+    border-radius: 20px;
+    border: 4px solid #FF2E63;
+}
+
+.inicio {
+    height: 100px;
+    width: 400px;
+    font-size: 38px;
+    outline: none;
+    border: none;
+    background-color: #08D9D6;
+    border-radius: 25px;
+    color: #252A34;
+    box-shadow: 0 6px 0 #FF2E63;
+    transition: .5s;
+}
+
+.inicio:active {
+    transform: translateY(6px);
+    box-shadow: none;
 }
