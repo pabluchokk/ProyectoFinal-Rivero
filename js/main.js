@@ -137,11 +137,14 @@ buscar.addEventListener("click", (e) => {
     buscarPokemon(nombrePokemon);
 });
 
+// ARREGLO INICIAL DEL EQUIPO
 
 let equipoPokemon = []
 
+// AGREGAR POKEMON AL EQUIPO
+
 function agregarEquipo(nombrePokemon) {
-    if (equipoPokemon.length < 6) {
+    if (equipoPokemon.length < 6) { // LÍMITE DE 6 POKEMON EN UN EQUIPO
     equipoPokemon.push(nombrePokemon)
     actualizar()
 
@@ -153,11 +156,13 @@ function agregarEquipo(nombrePokemon) {
     } else { 
         Swal.fire({
             title: "Equipo Pokémon Lleno",
-            text: "Tu equipo Pokémon ya tiene 6 Pokémon. Ya puedes liberar algunos combates!",
+            text: "Tu equipo Pokémon ya tiene 6 Pokémon. Prueba librar algunos combates!",
             icon: "warning"
         })
     }
 }
+
+// FUNCION PARA QUE MUESTRE LOS POKEMON EN LA LISTA AL COSTADO
 
 function actualizar () {
     let contador = document.getElementById("contador")
