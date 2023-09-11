@@ -174,8 +174,10 @@ input {
 
 #equipo {
     font-family: "CaviarBold";
+    display: none;
 }
 
 li {
     list-style: none;
 }
+

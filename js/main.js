@@ -68,6 +68,8 @@ function formSesion() {
         buscarPokemon(nombrePokemon)
     })
     buscador.style.display = "block"
+    let equipo = document.getElementById("equipo")
+    equipo.style.display = "block";
 }
 
 // CIERRE DE SESION
