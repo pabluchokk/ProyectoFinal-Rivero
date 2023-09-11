@@ -182,6 +182,8 @@ function actualizar () {
     })
 }
 
+// BOTON PARA ELIMINAR EL ULTIMO POKEMON
+
 let eliminar = document.getElementById("eliminar")
 eliminar.addEventListener("click", eliminarUltimo)
 

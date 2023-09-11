@@ -182,6 +182,8 @@ li {
     list-style: none;
 }
 
+/* ESTILO DE BOTON PARA ELIMINAR */
+
 #eliminar {
     border: none;
     border-radius: 20px;
