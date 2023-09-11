@@ -175,9 +175,20 @@ input {
 #equipo {
     font-family: "CaviarBold";
     display: none;
+    margin-left: 10px;
 }
 
 li {
     list-style: none;
 }
 
+#eliminar {
+    border: none;
+    border-radius: 20px;
+    background-color: #FF2E63;
+    padding: 10px;
+    margin: 10px;
+    color: #EAEAEA;
+    font-family: "CaviarBold";
+    cursor: pointer;
+}

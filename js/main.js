@@ -181,3 +181,19 @@ function actualizar () {
         lista.appendChild(list)
     })
 }
+
+let eliminar = document.getElementById("eliminar")
+eliminar.addEventListener("click", eliminarUltimo)
+
+function eliminarUltimo() {
+    if (equipoPokemon.length > 0) {
+        equipoPokemon.pop()
+        actualizar()
+    } else {
+        Swal.fire ({
+            title:"Equipo Pokémon Vacío",
+            text: "No hay Pokémon en tu equipo para liberar.",
+            icon: "info"
+        })
+    }
+}
